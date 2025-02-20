@@ -1,5 +1,5 @@
 resource "azurerm_resource_group" "cloudrg" {
-    location = "australia east"
+    location = "australiaeast"
     name = "mytf-cloud-rg"
     
 }
