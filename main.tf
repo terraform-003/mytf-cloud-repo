@@ -7,9 +7,9 @@ resource "azurerm_resource_group" "cloudrg" {
 resource "azurerm_storage_account" "cloudstoract" {
     account_replication_type = "LRS"
     account_tier = "Standard"
-    location = azurerm_resource_group.cloudrg.name
+    location = azurerm_resource_group.cloudrg.location
     name = "stor20025jks1"
-    resource_group_name = azurerm_resource_group.cloudrg.location
+    resource_group_name = azurerm_resource_group.cloudrg.name
     
 }
 
