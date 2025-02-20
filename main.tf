@@ -12,3 +12,9 @@ resource "azurerm_storage_account" "cloudstoract" {
     resource_group_name = azurerm_resource_group.cloudrg.location
     
 }
+
+resource "azurerm_resource_group" "cloudrg2" {
+    location = "uk west"
+    name = "ukw-mytf-cloud-rg"
+    
+}
